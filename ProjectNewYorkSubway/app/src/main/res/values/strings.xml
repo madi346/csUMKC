@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">ProjectNewYorkSubway</string>
+    <string name="q_line">q line</string>
+    <string name="one_line">one line</string>
+    <string name="j_line">j line</string>
+    <string name="four_line">four line</string>
+    <string name="d_line">d line</string>
+    <string name="e_line">e_line</string>
+    <string name="activity_d_line_goes_here">activity d line goes here</string>
+    <string name="activity_E_line_goes_here">activity e line goes here</string>
+    <string name="activity_four_line_goes_here">activity four line goes here</string>
+    <string name="activity_J_line_goes_here">activity J line goes here</string>
+    <string name="activity_one_line_goes_here">activity one goes here</string>
+    <string name="activity_Q_line_goes_here">activity q line goes here</string>
+</resources>
