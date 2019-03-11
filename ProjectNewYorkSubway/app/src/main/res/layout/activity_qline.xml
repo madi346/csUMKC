@@ -1,16 +1,58 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ActivityDLine">
+    tools:context=".ActivityQLine"
+    android:orientation="vertical">
 
-    <TextView
-        android:id="@+id/activityQ"
-        android:layout_width="wrap_content"
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/activity_Q_line_goes_here"
-        android:layout_centerHorizontal="true"
-        android:layout_centerVertical="true"/>
-</RelativeLayout>
+        android:orientation="vertical">
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id = "@+id/rGroupQ">
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/CLICK_FOR_FUN_FACT"
+                android:id= "@+id/radioButtonQ"
+                />
+        </RadioGroup>
+        <ImageView
+            android:id="@+id/qLinePhotoOne"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/q_line_picture"
+            android:src="@drawable/q1" />
+        <ImageView
+            android:id="@+id/qLinePhotoTwo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/q_line_picture"
+            android:src="@drawable/q2" />
+        <ImageView
+            android:id="@+id/qLinePhotoThree"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/q_line_picture"
+            android:src="@drawable/q3" />
+        <ImageView
+            android:id="@+id/qLinePhotoFour"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/q_line_picture"
+            android:src="@drawable/q4" />
+        <ImageView
+            android:id="@+id/qLinePhotoFive"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/q_line_picture"
+            android:src="@drawable/q5" />
+    </LinearLayout>
+
+</ScrollView>

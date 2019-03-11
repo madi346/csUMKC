@@ -1,16 +1,64 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ActivityDLine">
+    tools:context=".ActivityFourLine"
+    android:orientation="vertical">
 
-    <TextView
-        android:id="@+id/activityFour"
-        android:layout_width="wrap_content"
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/activity_four_line_goes_here"
-        android:layout_centerHorizontal="true"
-        android:layout_centerVertical="true"/>
-</RelativeLayout>
+        android:orientation="vertical">
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id = "@+id/rGroupFour">
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/CLICK_FOR_FUN_FACT"
+                android:id= "@+id/radioButtonFour"
+                />
+        </RadioGroup>
+        <ImageView
+            android:id="@+id/fourLinePhotoOne"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/four_line_picture"
+            android:src="@drawable/four1" />
+        <ImageView
+            android:id="@+id/fourLinePhotoTwo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/four_line_picture"
+            android:src="@drawable/four2" />
+        <ImageView
+            android:id="@+id/fourLinePhotoThree"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/four_line_picture"
+            android:src="@drawable/four3" />
+        <ImageView
+            android:id="@+id/fourLinePhotoFour"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/four_line_picture"
+            android:src="@drawable/four4" />
+        <ImageView
+            android:id="@+id/fourLinePhotoFive"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/four_line_picture"
+            android:src="@drawable/four5" />
+        <ImageView
+            android:id="@+id/fourLinePhotoSix"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/four_line_picture"
+            android:src="@drawable/four6" />
+    </LinearLayout>
+
+</ScrollView>

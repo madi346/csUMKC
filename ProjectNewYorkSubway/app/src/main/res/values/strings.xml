@@ -12,4 +12,12 @@
     <string name="activity_J_line_goes_here">activity J line goes here</string>
     <string name="activity_one_line_goes_here">activity one goes here</string>
     <string name="activity_Q_line_goes_here">activity q line goes here</string>
+    <string name="e_line_1">e line 1</string>
+    <string name="d_line_picture">photo of the d line</string>
+    <string name="e_line_picture">e line photo</string>
+    <string name="one_line_picture">one line photo</string>
+    <string name="four_line_picture" />
+    <string name="j_line_picture">j line photo</string>
+    <string name="q_line_picture">q line photo</string>
+    <string name="CLICK_FOR_FUN_FACT">CLICK FOR FUN FACT</string>
 </resources>

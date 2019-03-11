@@ -1,16 +1,58 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ActivityDLine">
+    tools:context=".ActivityJLine"
+    android:orientation="vertical">
 
-    <TextView
-        android:id="@+id/activityJ"
-        android:layout_width="wrap_content"
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/activity_J_line_goes_here"
-        android:layout_centerHorizontal="true"
-        android:layout_centerVertical="true"/>
-</RelativeLayout>
+        android:orientation="vertical">
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id = "@+id/rGroupJ">
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/CLICK_FOR_FUN_FACT"
+                android:id= "@+id/radioButtonJ"
+                />
+        </RadioGroup>
+        <ImageView
+            android:id="@+id/jLinePhotoOne"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/j_line_picture"
+            android:src="@drawable/j1" />
+        <ImageView
+            android:id="@+id/jLinePhotoTwo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/j_line_picture"
+            android:src="@drawable/j2" />
+        <ImageView
+            android:id="@+id/jLinePhotoThree"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/j_line_picture"
+            android:src="@drawable/j3" />
+        <ImageView
+            android:id="@+id/jLinePhotoFour"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/j_line_picture"
+            android:src="@drawable/j4" />
+        <ImageView
+            android:id="@+id/jLinePhotoFive"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/j_line_picture"
+            android:src="@drawable/j5" />
+    </LinearLayout>
+
+</ScrollView>

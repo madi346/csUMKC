@@ -1,16 +1,64 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ActivityDLine">
+    tools:context=".ActivityOneLine"
+    android:orientation="vertical">
 
-    <TextView
-        android:id="@+id/activityOne"
-        android:layout_width="wrap_content"
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/activity_one_line_goes_here"
-        android:layout_centerHorizontal="true"
-        android:layout_centerVertical="true"/>
-</RelativeLayout>
+        android:orientation="vertical">
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id = "@+id/rGroupOne">
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/CLICK_FOR_FUN_FACT"
+                android:id= "@+id/radioButtonOne"
+                />
+        </RadioGroup>
+        <ImageView
+            android:id="@+id/oneLinePhotoOne"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/one_line_picture"
+            android:src="@drawable/one1" />
+        <ImageView
+            android:id="@+id/oneLinePhotoTwo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/one_line_picture"
+            android:src="@drawable/one2" />
+        <ImageView
+            android:id="@+id/oneLinePhotoThree"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/one_line_picture"
+            android:src="@drawable/one3" />
+        <ImageView
+            android:id="@+id/oneLinePhotoFour"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/one_line_picture"
+            android:src="@drawable/one4" />
+        <ImageView
+            android:id="@+id/oneLinePhotoFive"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/one_line_picture"
+            android:src="@drawable/one5" />
+        <ImageView
+            android:id="@+id/oneLinePhotoSix"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/one_line_picture"
+            android:src="@drawable/one6" />
+    </LinearLayout>
+
+</ScrollView>
