@@ -19,57 +19,81 @@
             <RadioButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/CLICK_FOR_FUN_FACT"
+                android:text="@string/CLICK_FOR_FUN_FACT_E"
                 android:id= "@+id/radioButtonE"
                 />
         </RadioGroup>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textAlignment="center"
+            android:text="@string/CLICK_IF_BEEN_HERE_E"
+            android:id="@+id/btnHereE"
+            />
+
+        <TableLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TableRow>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Amount_E"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/total_been_here_E"
+                    android:id="@+id/totalNumE"/>
+            </TableRow>
+        </TableLayout>
+
         <ImageView
             android:id="@+id/eLinePhotoOne"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:contentDescription="@string/e_line_picture"
+            android:contentDescription="@string/e_line_picture_one"
             android:src="@drawable/e1" />
         <ImageView
             android:id="@+id/eLinePhotoTwo"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:contentDescription="@string/e_line_picture"
+            android:contentDescription="@string/e_line_picture_two"
             android:src="@drawable/e2" />
         <ImageView
             android:id="@+id/eLinePhotoThree"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:contentDescription="@string/e_line_picture"
+            android:contentDescription="@string/e_line_picture_three"
             android:src="@drawable/e3" />
         <ImageView
             android:id="@+id/eLinePhotoFour"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:contentDescription="@string/e_line_picture"
+            android:contentDescription="@string/e_line_picture_four"
             android:src="@drawable/e4" />
         <ImageView
             android:id="@+id/eLinePhotoFive"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:contentDescription="@string/e_line_picture"
+            android:contentDescription="@string/e_line_picture_five"
             android:src="@drawable/e5" />
         <ImageView
             android:id="@+id/eLinePhotoSix"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:contentDescription="@string/e_line_picture"
+            android:contentDescription="@string/e_line_picture_six"
             android:src="@drawable/e6" />
         <ImageView
             android:id="@+id/eLinePhotoSeven"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:contentDescription="@string/e_line_picture"
+            android:contentDescription="@string/e_line_picture_seven"
             android:src="@drawable/e7" />
         <ImageView
             android:id="@+id/eLinePhotoEight"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:contentDescription="@string/e_line_picture"
+            android:contentDescription="@string/e_line_picture_eight"
             android:src="@drawable/e8" />
     </LinearLayout>
 

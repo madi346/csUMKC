@@ -4,24 +4,17 @@ import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Button;
 import android.widget.ImageButton;
 
 public class MainActivity extends AppCompatActivity {
 
-    private ImageButton buttond;
-    private ImageButton buttone;
-    private ImageButton buttonfour;
-    private ImageButton buttonj;
-    private ImageButton buttonone;
-    private ImageButton buttonq;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        buttond = (ImageButton) findViewById(R.id.dline);
+       ImageButton buttond = findViewById(R.id.dline);
         buttond.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -30,7 +23,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        buttone = (ImageButton) findViewById(R.id.eline);
+        ImageButton buttone = findViewById(R.id.eline);
         buttone.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -39,7 +32,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        buttonfour = (ImageButton) findViewById(R.id.fourline);
+       ImageButton buttonfour = findViewById(R.id.fourline);
         buttonfour.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -48,7 +41,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        buttonj = (ImageButton) findViewById(R.id.jline);
+       ImageButton buttonj = findViewById(R.id.jline);
         buttonj.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -57,7 +50,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        buttonone = (ImageButton) findViewById(R.id.oneline);
+       ImageButton buttonone = findViewById(R.id.oneline);
         buttonone.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -66,7 +59,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        buttonq = (ImageButton) findViewById(R.id.qline);
+        ImageButton buttonq = findViewById(R.id.qline);
         buttonq.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -76,33 +69,33 @@ public class MainActivity extends AppCompatActivity {
         });
     }
 
-    public void openActivityD() {
-        Intent myIntent = new Intent(this, ActivityDLine.class);
-        startActivity(myIntent);
+   private void openActivityD() {
+        Intent myIntentD = new Intent(this, ActivityDLine.class);
+        startActivity(myIntentD);
     }
 
-    public void openActivityE() {
-        Intent myIntent = new Intent(this, ActivityELine.class);
-        startActivity(myIntent);
+    private void openActivityE() {
+        Intent myIntentE = new Intent(this, ActivityELine.class);
+        startActivity(myIntentE);
     }
 
-    public void openActivityFour() {
-        Intent myIntent = new Intent(this, ActivityFourLine.class);
-        startActivity(myIntent);
+    private void openActivityFour() {
+        Intent myIntentFour = new Intent(this, ActivityFourLine.class);
+        startActivity(myIntentFour);
     }
 
-    public void openActivityJ() {
-        Intent myIntent = new Intent(this, ActivityJLine.class);
-        startActivity(myIntent);
+    private void openActivityJ() {
+        Intent myIntentJ = new Intent(this, ActivityJLine.class);
+        startActivity(myIntentJ);
     }
 
-    public void openActivityOne() {
-        Intent myIntent = new Intent(this, ActivityOneLine.class);
-        startActivity(myIntent);
+    private void openActivityOne() {
+        Intent myIntentOne = new Intent(this, ActivityOneLine.class);
+        startActivity(myIntentOne);
     }
 
-    public void openActivityQ() {
-        Intent myIntent = new Intent(this, ActivityQLine.class);
-        startActivity(myIntent);
+    private void openActivityQ() {
+        Intent myIntentQ = new Intent(this, ActivityQLine.class);
+        startActivity(myIntentQ);
     }
 }

@@ -19,45 +19,69 @@
             <RadioButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/CLICK_FOR_FUN_FACT"
+                android:text="@string/CLICK_FOR_FUN_FACT_FOUR"
                 android:id= "@+id/radioButtonFour"
                 />
         </RadioGroup>
-        <ImageView
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textAlignment="center"
+            android:text="@string/CLICK_IF_BEEN_HERE_FOUR"
+            android:id="@+id/btnHereFour"
+            />
+
+        <TableLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TableRow>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Amount_Four"/>
+               <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/total_been_here_four"
+            android:id="@+id/totalNumFour"/>
+    </TableRow>
+</TableLayout>
+
+<ImageView
             android:id="@+id/fourLinePhotoOne"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:contentDescription="@string/four_line_picture"
+            android:contentDescription="@string/four_line_picture_one"
             android:src="@drawable/four1" />
         <ImageView
             android:id="@+id/fourLinePhotoTwo"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:contentDescription="@string/four_line_picture"
+            android:contentDescription="@string/four_line_picture_two"
             android:src="@drawable/four2" />
         <ImageView
             android:id="@+id/fourLinePhotoThree"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:contentDescription="@string/four_line_picture"
+            android:contentDescription="@string/four_line_picture_three"
             android:src="@drawable/four3" />
         <ImageView
             android:id="@+id/fourLinePhotoFour"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:contentDescription="@string/four_line_picture"
+            android:contentDescription="@string/four_line_picture_four"
             android:src="@drawable/four4" />
         <ImageView
             android:id="@+id/fourLinePhotoFive"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:contentDescription="@string/four_line_picture"
+            android:contentDescription="@string/four_line_picture_five"
             android:src="@drawable/four5" />
         <ImageView
             android:id="@+id/fourLinePhotoSix"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:contentDescription="@string/four_line_picture"
+            android:contentDescription="@string/four_line_picture_six"
             android:src="@drawable/four6" />
     </LinearLayout>
 

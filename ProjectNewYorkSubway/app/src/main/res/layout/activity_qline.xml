@@ -19,39 +19,64 @@
             <RadioButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/CLICK_FOR_FUN_FACT"
+            android:text="@string/CLICK_FOR_FUN_FACT_Q"
                 android:id= "@+id/radioButtonQ"
                 />
         </RadioGroup>
-        <ImageView
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textAlignment="center"
+            android:text="@string/CLICK_IF_BEEN_HERE_Q"
+            android:id="@+id/btnHereQ"
+            />
+
+        <TableLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TableRow>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Amount_Q"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/total_been_here_Q"
+            android:id="@+id/totalNumQ"/>
+    </TableRow>
+</TableLayout>
+
+<ImageView
             android:id="@+id/qLinePhotoOne"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:contentDescription="@string/q_line_picture"
+            android:contentDescription="@string/q_line_picture_one"
             android:src="@drawable/q1" />
         <ImageView
             android:id="@+id/qLinePhotoTwo"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:contentDescription="@string/q_line_picture"
+            android:contentDescription="@string/q_line_picture_two"
             android:src="@drawable/q2" />
         <ImageView
             android:id="@+id/qLinePhotoThree"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:contentDescription="@string/q_line_picture"
+            android:contentDescription="@string/q_line_picture_three"
             android:src="@drawable/q3" />
         <ImageView
             android:id="@+id/qLinePhotoFour"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:contentDescription="@string/q_line_picture"
+            android:contentDescription="@string/q_line_picture_four"
             android:src="@drawable/q4" />
         <ImageView
             android:id="@+id/qLinePhotoFive"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:contentDescription="@string/q_line_picture"
+            android:contentDescription="@string/q_line_picture_five"
             android:src="@drawable/q5" />
     </LinearLayout>
 

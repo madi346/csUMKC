@@ -20,34 +20,57 @@
               <RadioButton
                   android:layout_width="wrap_content"
                   android:layout_height="wrap_content"
-                  android:text="@string/CLICK_FOR_FUN_FACT"
+                  android:text="@string/CLICK_FOR_FUN_FACT_D"
                   android:id= "@+id/radioButtonD"
                   />
           </RadioGroup>
+          <Button
+              android:layout_width="wrap_content"
+              android:layout_height="match_parent"
+              android:textAlignment="center"
+              android:text="@string/CLICK_IF_BEEN_HERE_D"
+              android:id="@+id/btnHereD"
+              />
+          <TableLayout
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content">
+              <TableRow>
+                  <TextView
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:text="@string/Amount_d"/>
+                  <TextView
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:text="@string/total_been_here_D"
+                      android:id="@+id/totalNumD"/>
+
+              </TableRow>
+          </TableLayout>
 
           <ImageView
               android:id="@+id/dLinePhotoOne"
               android:layout_width="wrap_content"
               android:layout_height="wrap_content"
-              android:contentDescription="@string/d_line_picture"
+              android:contentDescription="@string/d_line_picture_one"
               android:src="@drawable/d1" />
           <ImageView
               android:id="@+id/dLinePhotoTwo"
               android:layout_width="match_parent"
               android:layout_height="wrap_content"
-              android:contentDescription="@string/d_line_picture"
+              android:contentDescription="@string/d_line_picture_two"
               android:src="@drawable/d2" />
           <ImageView
               android:id="@+id/dLinePhotoThree"
               android:layout_width="wrap_content"
               android:layout_height="wrap_content"
-              android:contentDescription="@string/d_line_picture"
+              android:contentDescription="@string/d_line_picture_three"
               android:src="@drawable/d3" />
           <ImageView
               android:id="@+id/dLinePhotoFour"
               android:layout_width="match_parent"
               android:layout_height="wrap_content"
-              android:contentDescription="@string/d_line_picture"
+              android:contentDescription="@string/d_line_picture_four"
               android:src="@drawable/d4" />
       </LinearLayout>
 
