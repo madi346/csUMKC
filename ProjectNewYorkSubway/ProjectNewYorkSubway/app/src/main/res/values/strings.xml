@@ -1,0 +1,114 @@
+<resources>
+    <string name="app_name">ProjectNewYorkSubway</string>
+    <string name="q_line">q line</string>
+    <string name="one_line">one line</string>
+    <string name="j_line">j line</string>
+    <string name="four_line">four line</string>
+    <string name="d_line">d line</string>
+    <string name="e_line">e line</string>
+
+
+
+
+
+
+
+    <string name="total_been_here_D">total people been here D</string>
+    <string name="CLICK_FOR_FUN_FACT_D">CLICK FOR FUN FACT</string>
+    <string name="CLICK_IF_BEEN_HERE_D">CLICK IF BEEN HERE</string>
+    <string name="d_line_picture_one">d line photo one</string>
+    <string name="d_line_picture_two">d line picture two</string>
+    <string name="d_line_picture_three">d line picture three</string>
+    <string name="d_line_picture_four">d line picture four</string>
+
+    <string name="e_line_picture_one">e line photo one</string>
+    <string name="e_line_picture_two">e line photo two</string>
+    <string name="e_line_picture_three">e line photo three</string>
+    <string name="e_line_picture_four">e line photo four</string>
+    <string name="e_line_picture_five">e line photo five</string>
+    <string name="e_line_picture_six">e line photo six</string>
+    <string name="e_line_picture_seven">e line photo seven</string>
+    <string name="e_line_picture_eight">e line photo eight</string>
+    <string name="CLICK_FOR_FUN_FACT_E">CLICK FOR FUN FACT</string>
+    <string name="CLICK_IF_BEEN_HERE_E">CLICK IF BEEN HERE</string>
+    <string name="total_been_here_E">total people been here</string>
+
+    <string name="CLICK_FOR_FUN_FACT_FOUR">CLICK FOR FUN FACT</string>
+    <string name="CLICK_IF_BEEN_HERE_FOUR">CLICK IF BEEN HERE</string>
+    <string name="total_been_here_four">total people been here</string>
+    <string name="four_line_picture_six">four line photo six</string>
+    <string name="four_line_picture_five">four line photo five</string>
+    <string name="four_line_picture_four">four line photo four</string>
+    <string name="four_line_picture_three">four line photo three</string>
+    <string name="four_line_picture_two">four line photo two</string>
+    <string name="four_line_picture_one">four line photo one</string>
+
+    <string name="j_line_picture_five">j line photo five</string>
+    <string name="j_line_picture_four">j line photo four</string>
+    <string name="j_line_picture_three">j line photo three</string>
+    <string name="j_line_picture_two">j line photo two</string>
+    <string name="j_line_picture_one">j line photo one</string>
+    <string name="total_been_here_J">total people been here</string>
+    <string name="CLICK_IF_BEEN_HERE_J">CLICK IF BEEN HERE</string>
+    <string name="CLICK_FOR_FUN_FACT_J">CLICK FOR FUN FACT</string>
+
+    <string name="one_line_picture_six">one line photo six</string>
+    <string name="one_line_picture_five">one line photo five</string>
+    <string name="one_line_picture_four">one line photo four</string>
+    <string name="one_line_picture_three">one line photo three</string>
+    <string name="one_line_picture_two">one line photo two</string>
+    <string name="one_line_picture_one">one line photo one</string>
+    <string name="total_been_here_ONE">total people been here</string>
+    <string name="CLICK_IF_BEEN_HERE_ONE">CLICK IF BEEN HERE</string>
+    <string name="CLICK_FOR_FUN_FACT_ONE">CLICK FOR FUN FACT</string>
+
+    <string name="q_line_picture_five">q line photo five</string>
+    <string name="q_line_picture_four">q line photo four</string>
+    <string name="q_line_picture_three">q line photo three</string>
+    <string name="q_line_picture_two">q line photo two</string>
+    <string name="q_line_picture_one">q line photo one</string>
+    <string name="total_been_here_Q">total people been here</string>
+    <string name="CLICK_IF_BEEN_HERE_Q">CLICK IF BEEN HERE</string>
+    <string name="CLICK_FOR_FUN_FACT_Q">CLICK FOR FUN FACT</string>
+
+
+
+
+
+
+
+
+
+    <string name="fact_d">A character in Seinfeld uses the D train to get to Coney Island</string>
+    <string name="fact_e">The E line is one of the most used services in the NYC subway system</string>
+    <string name="fact_four">The 4 line goes from Utica Avenue to Woodlawn</string>
+    <string name="fact_j">The J line was one of the original elevated lines in Brooklyn</string>
+    <string name="fact_One">In March 2009, the South Ferry station was opened</string>
+    <string name="fact_q">The Avenue Q musical uses the logo for the Q NYC subway line</string>
+
+    <string name="my_number_Q">my number q</string>
+    <string name="number_Q">number q</string>
+    <string name="my_number_one">my number one</string>
+    <string name="number_one">number one</string>
+    <string name="my_number_D">my number d</string>
+    <string name="number_D">number d</string>
+    <string name="my_number_E">my number e</string>
+    <string name="number_E">number e</string>
+    <string name="my_number_four">my number four</string>
+    <string name="number_four">number four</string>
+    <string name="number_J">number J</string>
+    <string name="my_number_J">my number j</string>
+
+
+    <string name="Amount_d"># of people that have been here :</string>
+    <string name="Amount_E"># of people that have been here :</string>
+    <string name="Amount_Four"># of people that have been here :</string>
+    <string name="Amount_J"># of people that have been here :</string>
+    <string name="Amount_One"># of people that have been here :</string>
+    <string name="Amount_Q"># of people that have been here :</string>
+    <string name="SCROLL_TO_TOP">SCROLL TO TOP</string>
+    <string name="hint" />
+    <string name="factLines">testing placeholder</string>
+    <string name="placeHolderA">too too</string>
+
+</resources>

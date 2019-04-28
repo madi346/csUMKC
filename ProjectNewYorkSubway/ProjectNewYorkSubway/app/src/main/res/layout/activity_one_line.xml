@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ActivityOneLine"
+    android:orientation="vertical"
+    android:id="@+id/scroll_view_one">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id = "@+id/rGroupOne">
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/CLICK_FOR_FUN_FACT_ONE"
+                android:id= "@+id/radioButtonOne"
+                />
+        </RadioGroup>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textAlignment="center"
+            android:text="@string/CLICK_IF_BEEN_HERE_ONE"
+            android:id="@+id/btnHereOne"
+            />
+        <TableLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TableRow>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Amount_One"/>
+
+            <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/total_been_here_ONE"
+            android:id="@+id/totalNumOne"/>
+    </TableRow>
+</TableLayout>
+
+<ImageView
+            android:id="@+id/oneLinePhotoOne"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/one_line_picture_one"
+            android:src="@drawable/one1" />
+        <ImageView
+            android:id="@+id/oneLinePhotoTwo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/one_line_picture_two"
+            android:src="@drawable/one2" />
+        <ImageView
+            android:id="@+id/oneLinePhotoThree"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/one_line_picture_three"
+            android:src="@drawable/one3" />
+        <ImageView
+            android:id="@+id/oneLinePhotoFour"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/one_line_picture_four"
+            android:src="@drawable/one4" />
+        <ImageView
+            android:id="@+id/oneLinePhotoFive"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/one_line_picture_five"
+            android:src="@drawable/one5" />
+        <ImageView
+            android:id="@+id/oneLinePhotoSix"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/one_line_picture_six"
+            android:src="@drawable/one6" />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/oneLineScrollTopButton"
+            android:textAlignment="center"
+            android:text="@string/SCROLL_TO_TOP"/>
+    </LinearLayout>
+
+</ScrollView>
