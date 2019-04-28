@@ -4,7 +4,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".ActivityELine"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:id="@+id/scroll_view_e">
 
 
 
@@ -95,6 +96,12 @@
             android:layout_height="wrap_content"
             android:contentDescription="@string/e_line_picture_eight"
             android:src="@drawable/e8" />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/eLineScrollTopButton"
+            android:textAlignment="center"
+            android:text="@string/SCROLL_TO_TOP"/>
     </LinearLayout>
 
 </ScrollView>

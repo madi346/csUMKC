@@ -4,7 +4,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".ActivityDLine"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:id="@+id/scroll_view_d">
 
 
 
@@ -72,6 +73,12 @@
               android:layout_height="wrap_content"
               android:contentDescription="@string/d_line_picture_four"
               android:src="@drawable/d4" />
+          <Button
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:id="@+id/dLineScrollTopButton"
+              android:textAlignment="center"
+              android:text="@string/SCROLL_TO_TOP"/>
       </LinearLayout>
 
 </ScrollView>

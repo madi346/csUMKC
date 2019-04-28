@@ -7,11 +7,14 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.RadioButton;
+import android.widget.ScrollView;
 import android.widget.TextView;
 import android.widget.Toast;
 
-public class ActivityFourLine extends AppCompatActivity {
+public class ActivityFourLine extends ActivityLines {
 //RadioButton radioBtnFour;
+    private ScrollView scrollViewFour;
+    private Button buttonTopFour;
 
     private int numberFour = 0;
 
@@ -38,26 +41,52 @@ public class ActivityFourLine extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                numberFour += 1;
+                //numberFour += 1;
+                ActivityLines activityLinesNumFour = new ActivityLines();
+                int numFour = activityLinesNumFour.numberOfPeople(numberFour);
 
                 SharedPreferences myFourPrefs = getSharedPreferences(getString(R.string.my_number_four), Context.MODE_PRIVATE);
                 SharedPreferences.Editor myFourEditor = myFourPrefs.edit();
-                myFourEditor.putInt(getString(R.string.number_four), numberFour);
+                myFourEditor.putInt(getString(R.string.number_four), numFour);
                 myFourEditor.apply();
 
-                numVisitedFour.setText(String.valueOf(numberFour));
+                numVisitedFour.setText(String.valueOf(numFour));
             }
         });
 
 
+        String strFour = getString(R.string.fact_four);
+
+        RadioButton radioBtnFour = findViewById(R.id.radioButtonFour);
+
+        ActivityLines activityLinesRadioFour = new ActivityLines();
+
+        Context fourContext = ActivityFourLine.this;
+        activityLinesRadioFour.radioButtonPopUp(strFour, radioBtnFour, fourContext);
 
         // radioGroupD = (RadioGroup)findViewById(R.id.rGroupD);
-       RadioButton radioBtnFour = findViewById(R.id.radioButtonFour);
+      /* RadioButton radioBtnFour = findViewById(R.id.radioButtonFour);
         radioBtnFour.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Toast.makeText(ActivityFourLine.this,getString(R.string.fact_four), Toast.LENGTH_LONG).show();
             }
-        });
+        });*/
+
+
+        scrollViewFour = findViewById(R.id.scroll_view_four);
+
+        buttonTopFour = findViewById(R.id.fourLineScrollTopButton);
+
+        ActivityLines activityLinesScrollFour = new ActivityLines();
+        activityLinesScrollFour.scrollingToTop(buttonTopFour, scrollViewFour);
+       /* buttonTopFour.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                //WHEN CLICK ON THE SCROLL TO TOP BUTTON, THIS SCROLLS TO THE TOP OF THE ACTIVITY
+                //scrollViewFour.scrollTo(0,0);
+                scrollViewFour.fullScroll(ScrollView.FOCUS_UP);
+            }
+        });*/
     }
 }

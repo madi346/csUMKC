@@ -79,7 +79,7 @@
 
 
 
-    <string name="fact_D">A character in Seinfeld uses the D train to get to Coney Island</string>
+    <string name="fact_d">A character in Seinfeld uses the D train to get to Coney Island</string>
     <string name="fact_e">The E line is one of the most used services in the NYC subway system</string>
     <string name="fact_four">The 4 line goes from Utica Avenue to Woodlawn</string>
     <string name="fact_j">The J line was one of the original elevated lines in Brooklyn</string>
@@ -106,5 +106,9 @@
     <string name="Amount_J"># of people that have been here :</string>
     <string name="Amount_One"># of people that have been here :</string>
     <string name="Amount_Q"># of people that have been here :</string>
+    <string name="SCROLL_TO_TOP">SCROLL TO TOP</string>
+    <string name="hint" />
+    <string name="factLines">testing placeholder</string>
+    <string name="placeHolderA">too too</string>
 
 </resources>

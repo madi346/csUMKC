@@ -4,7 +4,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".ActivityQLine"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:id="@+id/scroll_view_q">
 
 
 
@@ -78,6 +79,12 @@
             android:layout_height="wrap_content"
             android:contentDescription="@string/q_line_picture_five"
             android:src="@drawable/q5" />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/qLineScrollTopButton"
+            android:textAlignment="center"
+            android:text="@string/SCROLL_TO_TOP" />
     </LinearLayout>
 
 </ScrollView>

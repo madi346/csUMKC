@@ -8,10 +8,14 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.RadioButton;
+import android.widget.ScrollView;
 import android.widget.TextView;
 import android.widget.Toast;
 
-public class ActivityELine extends AppCompatActivity {
+public class ActivityELine extends ActivityLines {
+        //extends AppCompatActivity {
+    private ScrollView scrollViewE;
+    private Button buttonTopE;
 
     //private static final String TAG = "ActivityE";
 
@@ -49,30 +53,58 @@ public class ActivityELine extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                numberE += 1;
+               // numberE += 1;
+                ActivityLines activityLinesNumE = new ActivityLines();
+                int numE = activityLinesNumE.numberOfPeople(numberE);
+
 
                 SharedPreferences myEPrefs = getSharedPreferences(getString(R.string.my_number_E), Context.MODE_PRIVATE);
                 SharedPreferences.Editor myEEditor = myEPrefs.edit();
-                myEEditor.putInt(getString(R.string.number_E), numberE);
+                myEEditor.putInt(getString(R.string.number_E), numE);
                 myEEditor.apply();
 
-                numVisitedE.setText(String.valueOf(numberE));
+                numVisitedE.setText(String.valueOf(numE));
             }
         });
 
 
 
 
-
+        String strE = getString(R.string.fact_e);
 
         RadioButton radioBtnE = findViewById(R.id.radioButtonE);
+
+        ActivityLines activityLinesRadioE = new ActivityLines();
+
+        Context eContext = ActivityELine.this;
+        activityLinesRadioE.radioButtonPopUp(strE, radioBtnE, eContext);
+
+
+       /* RadioButton radioBtnE = findViewById(R.id.radioButtonE);
         radioBtnE.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Toast.makeText(ActivityELine.this,getString(R.string.fact_e), Toast.LENGTH_LONG).show();
 
             }
-        });
+        });*/
+
+
+
+        scrollViewE = findViewById(R.id.scroll_view_e);
+
+        buttonTopE = findViewById(R.id.eLineScrollTopButton);
+        ActivityLines activityLinesScrollE = new ActivityLines();
+        activityLinesScrollE.scrollingToTop(buttonTopE, scrollViewE);
+
+        /*buttonTopE.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                //WHEN CLICK ON THE SCROLL TO TOP BUTTON, THIS SCROLLS TO THE TOP OF THE ACTIVITY
+                //scrollViewE.scrollTo(0,0);
+                scrollViewE.fullScroll(ScrollView.FOCUS_UP);
+            }
+        });*/
     }
 
 }

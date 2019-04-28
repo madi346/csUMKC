@@ -4,7 +4,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".ActivityOneLine"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:id="@+id/scroll_view_one">
 
 
 
@@ -83,6 +84,12 @@
             android:layout_height="wrap_content"
             android:contentDescription="@string/one_line_picture_six"
             android:src="@drawable/one6" />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/oneLineScrollTopButton"
+            android:textAlignment="center"
+            android:text="@string/SCROLL_TO_TOP"/>
     </LinearLayout>
 
 </ScrollView>

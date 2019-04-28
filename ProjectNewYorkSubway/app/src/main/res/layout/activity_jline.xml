@@ -4,7 +4,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".ActivityJLine"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:id="@+id/scroll_view_j">
 
 
 
@@ -78,6 +79,12 @@
             android:layout_height="wrap_content"
             android:contentDescription="@string/j_line_picture_five"
             android:src="@drawable/j5" />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/jLineScrollTopButton"
+            android:textAlignment="center"
+            android:text="@string/SCROLL_TO_TOP"/>
     </LinearLayout>
 
 </ScrollView>
