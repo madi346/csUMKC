@@ -8,11 +8,6 @@
     <string name="e_line">e line</string>
 
 
-
-
-
-
-
     <string name="total_been_here_D">total people been here D</string>
     <string name="CLICK_FOR_FUN_FACT_D">CLICK FOR FUN FACT</string>
     <string name="CLICK_IF_BEEN_HERE_D">CLICK IF BEEN HERE</string>
@@ -72,13 +67,6 @@
     <string name="CLICK_FOR_FUN_FACT_Q">CLICK FOR FUN FACT</string>
 
 
-
-
-
-
-
-
-
     <string name="fact_d">A character in Seinfeld uses the D train to get to Coney Island</string>
     <string name="fact_e">The E line is one of the most used services in the NYC subway system</string>
     <string name="fact_four">The 4 line goes from Utica Avenue to Woodlawn</string>
@@ -106,9 +94,17 @@
     <string name="Amount_J"># of people that have been here :</string>
     <string name="Amount_One"># of people that have been here :</string>
     <string name="Amount_Q"># of people that have been here :</string>
+
     <string name="SCROLL_TO_TOP">SCROLL TO TOP</string>
+
     <string name="hint" />
+
     <string name="factLines">testing placeholder</string>
+
     <string name="placeHolderA">too too</string>
+
+    <string name="aboutme">NYCSubwayPicturesApp was created by Madison Hubbard from February 2019 to May 2019</string>
+
+    <string name="about_app">About App</string>
 
 </resources>

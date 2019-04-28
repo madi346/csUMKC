@@ -6,11 +6,14 @@
         android:allowBackup="true"
         android:icon="@mipmap/appiconsproject"
         android:label="@string/app_name"
+        android:largeHeap="true"
         android:roundIcon="@mipmap/appiconsproject"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme"
-        android:largeHeap="true">
-        <activity android:name=".ActivityQLine"></activity>
+        android:theme="@style/AppTheme">
+        <activity android:name=".ActivityAboutMe"></activity>
+        <activity android:name=".ActivityDReviews" />
+        <activity android:name=".AboutMe" />
+        <activity android:name=".ActivityQLine" />
         <activity android:name=".ActivityOneLine" />
         <activity android:name=".ActivityJLine" />
         <activity android:name=".ActivityFourLine" />

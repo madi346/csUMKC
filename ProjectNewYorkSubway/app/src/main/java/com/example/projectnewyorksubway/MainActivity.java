@@ -3,6 +3,9 @@ package com.example.projectnewyorksubway;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuInflater;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.ImageButton;
 
@@ -69,7 +72,30 @@ public class MainActivity extends AppCompatActivity {
         });
     }
 
-   private void openActivityD() {
+    //for the menu at the top of the screen showing the about page
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        MenuInflater aboutInflater = getMenuInflater();
+        aboutInflater.inflate(R.menu.main_menu, menu);
+        return true;
+    }
+    //the onclick for the about page
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch(item.getItemId()) {
+
+            case R.id.item_about: {
+                Intent myIntentAbout = new Intent(this, ActivityAboutMe.class);
+                startActivity(myIntentAbout);
+                return true;
+            }
+
+            default:
+                return super.onOptionsItemSelected(item);
+        }
+    }
+
+    private void openActivityD() {
         Intent myIntentD = new Intent(this, ActivityDLine.class);
         startActivity(myIntentD);
     }
