@@ -1,1 +1,177 @@
 ;;https://repl.it/@madih346/projectNumbers
+
+;; used repl.it for this clojure project 
+
+;; namespace ns 
+(ns projectNumbers.core
+    (require [clojure.string :as str]))
+
+(use 'clojure.java.io)
+
+;; resources :
+;; https://www.braveclojure.com/getting-started/
+;; https://www.braveclojure.com/do-things/#4_3__loop
+;; https://clojuredocs.org/clojure.core/loop
+;; https://stackoverflow.com/questions/2103599/better-alternative-to-pmap- -clojure-for-parallelizing-moderately-inexpensive-f?rq=1
+;; https://clojure.org/guides/weird_characters
+;; https://clojuredocs.org/clojure.core/map
+;; https://www.braveclojure.com/concurrency/ 
+;; https://purelyfunctional.tv/guide/clojure-collections/#count
+
+
+
+;; this function reads a file and slurps the file contents into a string 
+(def nums
+
+ (slurp "10000.txt")
+ 
+)
+
+;;this turns nums into a lazy sequence (lazy-seq) of integers for use of sorting 
+(def lazy-seq-nums 
+  
+  (map #(Integer/parseInt % ) (str/split nums #"\s+") )
+  
+  )
+
+
+
+(defn merge-sort-nums
+  [leftside rightside]
+  
+  (loop [head [] left leftside right rightside]
+    
+    (if (empty? left )(concat head right)
+        (if (empty? right )(concat head left)
+            (if (> (first left) (first right))
+                
+                (recur (conj head (first right)) left (rest right ))
+                (recur (conj head (first left)) (rest left) right)
+                
+                
+                ))
+        
+        )
+  
+  ))
+
+;; single threaded merge sort, use normal map
+(defn single-thread-ms [list]
+  
+  (if (< (count list )2) list 
+      
+      (apply merge-sort-nums
+            (map single-thread-ms
+                 (split-at (/ (count list)2) list) ) )
+      )
+  
+  )
+
+;; for 2, 4, 8, 16, 32 threads do parallel merge sort, so use pmap 
+(defn two-threads-ms [list]
+  
+  (if (< (count list)2) list 
+      
+      (apply merge-sort-nums 
+             (pmap single-thread-ms
+                   (split-at (/ (count list )2)list)
+                   ))
+      )
+  )
+
+(defn four-threads-ms [list]
+  
+  (if (< (count list)2) list 
+      
+      (apply merge-sort-nums 
+             (pmap two-threads-ms
+                   (split-at (/ (count list)2)list)
+                   ))))
+                 
+
+(defn eight-threads-ms [list]
+  
+  (if (< (count list)2) list 
+      
+      (apply merge-sort-nums 
+             (pmap four-threads-ms
+                   (split-at (/ (count list)2)list)
+                   ))))
+
+
+(defn sixteen-threads-ms [list]
+  
+  (if (< (count list)2) list 
+      
+      (apply merge-sort-nums 
+             (pmap eight-threads-ms
+                   (split-at (/ (count list)2)list)
+                   ))))
+
+(defn thirty-two-threads-ms [list]
+  
+  (if (< (count list)2) list 
+      
+      (apply merge-sort-nums 
+             (pmap sixteen-threads-ms
+                   (split-at (/ (count list)2)list)
+                   ))))
+
+
+
+(defn -main
+  [& args]
+
+  (println "Clojure Project using Merge Sort\n")
+  
+  (println "Using single threaded merge sort: ")
+  (time (single-thread-ms lazy-seq-nums))
+  (time (single-thread-ms lazy-seq-nums))
+  (time (single-thread-ms lazy-seq-nums))
+  (time (single-thread-ms lazy-seq-nums))
+  (time (single-thread-ms lazy-seq-nums)) 
+
+  (println "Using two threaded parallel merge sort: ")
+  (time (two-threads-ms lazy-seq-nums))
+  (time (two-threads-ms lazy-seq-nums))
+  (time (two-threads-ms lazy-seq-nums))
+  (time (two-threads-ms lazy-seq-nums))
+  (time (two-threads-ms lazy-seq-nums))
+
+  (println "Using four threaded parallel merge sort: ")
+  (time (four-threads-ms lazy-seq-nums))
+  (time (four-threads-ms lazy-seq-nums))
+  (time (four-threads-ms lazy-seq-nums))
+  (time (four-threads-ms lazy-seq-nums))
+  (time (four-threads-ms lazy-seq-nums))
+
+  (println "Using eight threaded parallel merge sort: ")
+  (time (eight-threads-ms lazy-seq-nums))
+  (time (eight-threads-ms lazy-seq-nums))
+  (time (eight-threads-ms lazy-seq-nums))
+  (time (eight-threads-ms lazy-seq-nums))
+  (time (eight-threads-ms lazy-seq-nums))
+
+  (println "Using sixteen threaded parallel merge sort: ")
+  (time (sixteen-threads-ms lazy-seq-nums))
+  (time (sixteen-threads-ms lazy-seq-nums))
+  (time (sixteen-threads-ms lazy-seq-nums))
+  (time (sixteen-threads-ms lazy-seq-nums))
+  (time (sixteen-threads-ms lazy-seq-nums))
+
+  (println "Using thirty two threaded parallel merge sort: ")
+  (time (thirty-two-threads-ms lazy-seq-nums))
+  (time (thirty-two-threads-ms lazy-seq-nums))
+  (time (thirty-two-threads-ms lazy-seq-nums))
+  (time (thirty-two-threads-ms lazy-seq-nums))
+  (time (thirty-two-threads-ms lazy-seq-nums))
+  
+   
+
+  
+  (shutdown-agents)
+
+ 
+;;en2d of main 
+)
+
