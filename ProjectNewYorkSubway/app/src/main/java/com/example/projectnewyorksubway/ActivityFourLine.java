@@ -12,14 +12,14 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 public class ActivityFourLine extends ActivityLines {
-//RadioButton radioBtnFour;
+
     private ScrollView scrollViewFour;
     private Button buttonTopFour;
 
     private int numberFour = 0;
 
     private TextView numVisitedFour; //the number of people that have been to the Four line before
-   // private Button btnFour;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -41,7 +41,7 @@ public class ActivityFourLine extends ActivityLines {
             @Override
             public void onClick(View v) {
 
-                //numberFour += 1;
+
                 ActivityLines activityLinesNumFour = new ActivityLines();
                 int numFour = activityLinesNumFour.numberOfPeople(numberFour);
 
@@ -54,39 +54,25 @@ public class ActivityFourLine extends ActivityLines {
             }
         });
 
-
-        String strFour = getString(R.string.fact_four);
+        //for the radio button pop up of the fun facts in English and French
+        String strFourEnglish = getString(R.string.fact_four);
+        String strFourFrench = getString(R.string.fact_four_french);
 
         RadioButton radioBtnFour = findViewById(R.id.radioButtonFour);
 
         ActivityLines activityLinesRadioFour = new ActivityLines();
 
         Context fourContext = ActivityFourLine.this;
-        activityLinesRadioFour.radioButtonPopUp(strFour, radioBtnFour, fourContext);
 
-        // radioGroupD = (RadioGroup)findViewById(R.id.rGroupD);
-      /* RadioButton radioBtnFour = findViewById(R.id.radioButtonFour);
-        radioBtnFour.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Toast.makeText(ActivityFourLine.this,getString(R.string.fact_four), Toast.LENGTH_LONG).show();
-            }
-        });*/
+        activityLinesRadioFour.radioButtonPopUp(strFourEnglish, radioBtnFour, fourContext, strFourFrench);
 
 
+        //for the scroll to top button
         scrollViewFour = findViewById(R.id.scroll_view_four);
-
         buttonTopFour = findViewById(R.id.fourLineScrollTopButton);
 
         ActivityLines activityLinesScrollFour = new ActivityLines();
         activityLinesScrollFour.scrollingToTop(buttonTopFour, scrollViewFour);
-       /* buttonTopFour.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                //WHEN CLICK ON THE SCROLL TO TOP BUTTON, THIS SCROLLS TO THE TOP OF THE ACTIVITY
-                //scrollViewFour.scrollTo(0,0);
-                scrollViewFour.fullScroll(ScrollView.FOCUS_UP);
-            }
-        });*/
+
     }
 }

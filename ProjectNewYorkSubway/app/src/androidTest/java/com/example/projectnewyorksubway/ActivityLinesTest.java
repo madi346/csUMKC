@@ -67,36 +67,21 @@ public class ActivityLinesTest {
 
     @Rule
     public ActivityTestRule<MainActivity> activityRule = new ActivityTestRule<>(MainActivity.class);
-   // private MainActivity myMainActivity = null;
-   // public ActivityTestRule<ActivityLines> activityRule
-         //   = new ActivityTestRule<ActivityLines>(ActivityLines.class);
 
     @Before
     public void setUp() throws Exception {
-        //first activity (the main activity)
-       // MainActivity myMainActivity = myMainActivityTestRule.getActivity();
-       // ActivityLines myLinesActivity = myLinesActivityTestRule.getActivity();
+
     }
 
 
-    /*
-        @Test
-        public void onCreate() {
-        }
-    */
+
     @Test
     public void scrollingToTop() {
         //click on button
         onView(withId(R.id.radioButtonD)).perform(scrollTo(), click()).check(matches(isDisplayed()));
 
-        //scroll to top
-        //.check(scrol);ummidgnoreeey
+
     }
 
-   /* @Test
-    public void radioButtonPopUp() {
-        //onView(withId(R.id.));
-        //toasts camt be tested....
-       // onView(withId(R.id.buttonRad)).perform(click()).check(matches(isDisplayed()));
-    } */
+
 }

@@ -14,7 +14,8 @@ import android.widget.Toast;
 public class ActivityLines extends AppCompatActivity {
 
     public int numberLine = 0;
-    protected String strB = "cat";
+    protected String strEng = "englishfactplaceholder";
+    protected String strFre = "frenchfactplaceholder";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,41 +25,37 @@ public class ActivityLines extends AppCompatActivity {
     }
         //method for incrementing number of people who have been here
         //load how many people have been here
-
         public int numberOfPeople(int numberLine){
-            //return an integer the number of people...
 
-
-            //must .setText to update the number of people
-            //numVisitedLine.setText("number :" + numberD);
             numberLine += 1;
             return numberLine;
         }
 
 
         // method for scroll to top
-
         public void scrollingToTop (Button buttonTopLine,final ScrollView scrollViewLine){
             buttonTopLine.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
+
                     //WHEN CLICK ON THE SCROLL TO TOP BUTTON, THIS SCROLLS TO THE TOP OF THE ACTIVITY
-                    //scrollViewLines.scrollTo(0,0);
                     scrollViewLine.fullScroll(ScrollView.FOCUS_UP);
                 }
             });
         }
 
+
+        // method for radio button toast in both English and French
         Context lineContext = ActivityLines.this;
-        // method for radio button toast
-        public void radioButtonPopUp(final String strB, RadioButton radioBtnLine, final Context lineContext){
+        public void radioButtonPopUp(final String strEng, RadioButton radioBtnLine, final Context
+                lineContext, final String strFre){
 
             radioBtnLine.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-                    // String hintA = String.valueOf(R.string.hintB);
-                    // Toast.makeText(ActivityLines.this,factLines,Toast.LENGTH_LONG).show();
-                    Toast.makeText(lineContext, strB, Toast.LENGTH_LONG).show();
+
+                    Toast.makeText(lineContext, strEng, Toast.LENGTH_LONG).show();
+                    Toast.makeText(lineContext, strFre, Toast.LENGTH_LONG).show();
 
                 }
             });

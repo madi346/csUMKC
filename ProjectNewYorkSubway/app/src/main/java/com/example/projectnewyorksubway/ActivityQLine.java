@@ -54,16 +54,19 @@ public class ActivityQLine extends ActivityLines {
             }
         });
 
+        //for the radio button pop up of the fun facts in English and French
+        String strQEnglish = getString(R.string.fact_q);
+        String strQFrench = getString(R.string.fact_q_french);
 
-        String strQ = getString(R.string.fact_q);
         RadioButton radioBtnQ = findViewById(R.id.radioButtonQ);
 
         ActivityLines activityLinesRadioQ = new ActivityLines();
         Context qContext = ActivityQLine.this;
 
-        activityLinesRadioQ.radioButtonPopUp(strQ, radioBtnQ, qContext);
+        activityLinesRadioQ.radioButtonPopUp(strQEnglish, radioBtnQ, qContext, strQFrench);
 
 
+        //for the scroll to top button
         scrollViewQ = findViewById(R.id.scroll_view_q);
         buttonTopQ = findViewById(R.id.qLineScrollTopButton);
 

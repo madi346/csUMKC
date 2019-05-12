@@ -12,14 +12,14 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 public class ActivityJLine extends ActivityLines {
-//RadioButton radioBtnJ;
+
     private ScrollView scrollViewJ;
     private Button buttonTopJ;
 
     private int numberJ = 0;
 
     private TextView numVisitedJ; //the number of people that have been to the J line before
-    //private Button btnJ;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -41,7 +41,7 @@ public class ActivityJLine extends ActivityLines {
             @Override
             public void onClick(View v) {
 
-                //numberJ += 1;
+
                 ActivityLines activityLinesNumJ = new ActivityLines();
                 int numJ = activityLinesNumJ.numberOfPeople(numberJ);
 
@@ -55,40 +55,26 @@ public class ActivityJLine extends ActivityLines {
             }
         });
 
-
-        String strJ = getString(R.string.fact_j);
+        //for the radio button pop up of the fun facts in English and French
+        String strJEnglish = getString(R.string.fact_j);
+        String strJFrench = getString(R.string.fact_j_french);
 
         RadioButton radioBtnJ = findViewById(R.id.radioButtonJ);
 
         ActivityLines activityLinesRadioJ = new ActivityLines();
 
         Context jContext = ActivityJLine.this;
-        activityLinesRadioJ.radioButtonPopUp(strJ, radioBtnJ, jContext);
 
-        /*// radioGroupD = (RadioGroup)findViewById(R.id.rGroupD);
-        RadioButton radioBtnJ = findViewById(R.id.radioButtonJ);
-        radioBtnJ.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Toast.makeText(ActivityJLine.this,getString(R.string.fact_j), Toast.LENGTH_LONG).show();
-            }
-        });*/
+        activityLinesRadioJ.radioButtonPopUp(strJEnglish, radioBtnJ, jContext, strJFrench);
 
 
-
+        //for the scroll to top button
         scrollViewJ = findViewById(R.id.scroll_view_j);
-
         buttonTopJ = findViewById(R.id.jLineScrollTopButton);
+
         ActivityLines activityLinesScrollJ = new ActivityLines();
         activityLinesScrollJ.scrollingToTop(buttonTopJ, scrollViewJ);
 
-        /*buttonTopJ.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                //WHEN CLICK ON THE SCROLL TO TOP BUTTON, THIS SCROLLS TO THE TOP OF THE ACTIVITY
-                //scrollViewJ.scrollTo(0,0);
-                scrollViewJ.fullScroll(ScrollView.FOCUS_UP);
-            }
-        });*/
+
     }
 }

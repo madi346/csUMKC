@@ -79,6 +79,7 @@ public class MainActivity extends AppCompatActivity {
         aboutInflater.inflate(R.menu.main_menu, menu);
         return true;
     }
+
     //the onclick for the about page
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {

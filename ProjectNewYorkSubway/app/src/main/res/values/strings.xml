@@ -74,6 +74,13 @@
     <string name="fact_One">In March 2009, the South Ferry station was opened</string>
     <string name="fact_q">The Avenue Q musical uses the logo for the Q NYC subway line</string>
 
+    <string name="fact_d_french">Une personne à Seinfeld utilise le train D pour se rendre à l’île de Coney</string>
+    <string name="fact_e_french">La ligne e est l’un des services les plus utilisés dans le métro de New York</string>
+    <string name="fact_four_french">"La ligne 4 va de l'avenue utica au woodlawn"</string>
+    <string name="fact_j_french">"La ligne j était l'une des lignes surélevées d'origine à Brooklyn"</string>
+    <string name="fact_one_french">En mars 2009, la gare de South Ferry a été ouverte</string>
+    <string name="fact_q_french">Avenue Q musical utilise le logo de la ligne de métro Q NYC</string>
+
     <string name="my_number_Q">my number q</string>
     <string name="number_Q">number q</string>
     <string name="my_number_one">my number one</string>

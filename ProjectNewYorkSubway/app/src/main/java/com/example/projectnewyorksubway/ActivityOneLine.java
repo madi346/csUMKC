@@ -12,14 +12,14 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 public class ActivityOneLine extends ActivityLines {
-//RadioButton radioBtnOne;
+
     private ScrollView scrollViewOne;
     private Button buttonTopOne;
 
    private int numberOne = 0;
 
     private TextView numVisitedOne; //the number of people that have been to the One line before
-   // private Button btnOne;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -41,7 +41,7 @@ public class ActivityOneLine extends ActivityLines {
             @Override
             public void onClick(View v) {
 
-                //numberOne += 1;
+
                 ActivityLines activityLinesNumOne = new ActivityLines();
                 int numOne = activityLinesNumOne.numberOfPeople(numberOne);
 
@@ -54,40 +54,24 @@ public class ActivityOneLine extends ActivityLines {
             }
         });
 
-
-        String strOne = getString(R.string.fact_One);
+        //for the radio button pop up of the fun facts in English and French
+        String strOneEnglish = getString(R.string.fact_One);
+        String strOneFrench = getString(R.string.fact_one_french);
 
         RadioButton radioBtnOne = findViewById(R.id.radioButtonOne);
 
         ActivityLines activityLinesRadioOne = new ActivityLines();
 
         Context oneContext = ActivityOneLine.this;
-        activityLinesRadioOne.radioButtonPopUp(strOne, radioBtnOne, oneContext);
-
-        /*// radioGroupD = (RadioGroup)findViewById(R.id.rGroupD);
-       RadioButton radioBtnOne = findViewById(R.id.radioButtonOne);
-        radioBtnOne.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Toast.makeText(ActivityOneLine.this,getString(R.string.fact_One), Toast.LENGTH_LONG).show();
-            }
-        });*/
+        activityLinesRadioOne.radioButtonPopUp(strOneEnglish, radioBtnOne, oneContext, strOneFrench);
 
 
-
+        //for the scroll to top button
         scrollViewOne = findViewById(R.id.scroll_view_one);
-
         buttonTopOne = findViewById(R.id.oneLineScrollTopButton);
+
         ActivityLines activityLinesScrollOne = new ActivityLines();
         activityLinesScrollOne.scrollingToTop(buttonTopOne, scrollViewOne);
 
-       /* buttonTopOne.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                //WHEN CLICK ON THE SCROLL TO TOP BUTTON, THIS SCROLLS TO THE TOP OF THE ACTIVITY
-                //scrollViewOne.scrollTo(0,0);
-                scrollViewOne.fullScroll(ScrollView.FOCUS_UP);
-            }
-        });*/
     }
 }
